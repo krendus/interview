@@ -1,0 +1,151 @@
+.container {
+    background-color: #f3f3f3;
+    display: flex;
+    height: 100%;
+}
+.sideImage {
+    width: 60%;
+    overflow: hidden;
+}
+.sideImage img {
+    height: 100%;
+    width: auto;
+}
+.mainContainer {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.formContainer {
+    background: #fff;
+    width: 90%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 20px 40px rgba(180, 180, 180, 0.2);
+    border-radius: 2px;
+    padding: 34px 67px ;
+    z-index: 2;
+}
+.logo {
+    height: 30px;
+}
+.googleBtn, .fbBtn {
+    height: 38px;
+    margin: 9px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+.googleBtn img{
+    padding-right:30px;
+}
+.fbBtn img{
+    padding-right:23px;
+}
+.googleBtn {
+    background: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    color: #001513;
+}
+.fbBtn {
+    background: #3B5998;
+    color: #FFFFFF;
+    border: none;
+}
+.orBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 14px;
+    color: #002A25;
+}
+.orBox img {
+    width: 45%;
+    padding: 0 4px;
+}
+.formContainer input {
+    height: 38px;
+    margin: 9px 0;
+    border: 1px solid #E5E5E5;
+    font-size: 13px;
+    padding: 0 16px;
+    outline: none;
+}
+.forgotPass {
+    font-size: 11px;
+    color: #999999;
+}
+.forgotPass button{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-size: 11px;
+    color: inherit;
+    cursor: pointer;
+}
+.forgotPass button:hover{
+    text-decoration: none;
+}
+.loginBtn {
+    height: 38px;
+    margin: 21px 0 5px 0;
+    background: #53A9E7;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.noAcct {
+    color: #060F41;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.noAcct button {
+    border: none;
+    background: none;
+    color: #060F41;
+    text-decoration: underline;
+    font-size: 14px;
+    color: inherit;
+    cursor: pointer;
+}
+.noAcct button:hover {
+    text-decoration: none;
+}
+.dot1 {
+    position:absolute;
+    top: 80px;
+    left: 25px;
+    z-index: 1;
+}
+.dot2{
+    position:absolute;
+    bottom: 130px;
+    right: 25px;
+    z-index: 1;
+}
+@media screen and (max-width: 1000px){
+    .sideImage {
+        display: none;
+    }
+    .mainContainer {
+        width: 100%;
+        padding: 40px 0;
+        min-height: 100vh;
+    }
+}@media screen and (max-width: 450px){
+    .googleBtn img{
+        padding-right:20px;
+    }
+    .fbBtn img{
+        padding-right:13px;
+    }
+}
