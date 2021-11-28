@@ -32,6 +32,7 @@
 }
 .logo {
     height: 30px;
+    width: auto;
 }
 .googleBtn, .fbBtn {
     height: 38px;
