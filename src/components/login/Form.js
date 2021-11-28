@@ -35,7 +35,7 @@ const Form = () => {
                     <div className={style.orBox}><img src={line} alt="" /> OR <img src={line} alt="" /> </div>
                     <input type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Full name" required/>
                     <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" required/>
-                    <div className={style.forgotPass}><span>Forgot password? </span><button>Click here!</button></div>
+                    <div className={style.forgotPass}><span>Forgot password? </span><button onClick={e => e.preventDefault()}>Click here!</button></div>
                     <button className={style.loginBtn} onClick={(e) => goToDashboard(e, 'manual')}>Login</button>
                     {showError && <p style={{color: 'red', fontSize: '12px', textAlign: 'center'}}>Please fill out the required field</p>}
                 </form>
