@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
 }
-.searchContainer{
+.searchContainer, .bottomSearch{
  display: flex;
  background-color: #ffffff;
  width: 400px;
@@ -28,20 +28,28 @@
  justify-content: space-between;
  align-items: center;
 }
-.searchContainer img {
+.searchContainer img , .bottomSearch img{
     height: 20px;
 }
-.searchContainer form {
+.searchContainer form, .bottomSearch form{
     height: 100%;
     width: 100%;
 }
- .searchContainer input {
+ .searchContainer input, .bottomSearch input {
     background: none;
     border: none;
     height: 100%;
     width: 100%;
     outline: none;
 }
+.bottomSearch {
+    display: none;
+    padding-right: 15px;
+    border-bottom: 1px solid #060F41;
+    width: 100%;
+    border-radius: 0px;
+}
+
 .navLink {
     padding: 0 25px;
     border-right: 1px solid #ffffff;
@@ -145,13 +153,13 @@
 .hamButton {
     background: none;
     border: none;
-    height: 30px;
+    height: 25px;
     padding-left: 15px;
     display: none;
     cursor: pointer;
 }
 .hamButton img {
-    height: 30px;
+    height: 25px;
 }
 @media screen and (max-width: 1100px){
     .card {
@@ -184,6 +192,9 @@
 @media screen and (max-width: 680px){
     .searchContainer {
         display: none;
+    }
+    .bottomSearch {
+        display: flex;
     }
     .customDrop {
         margin: 5px auto;

@@ -53,6 +53,20 @@ const Navbar = ({setSearched, searched}) => {
                 </div>
                 
             </div>
+            <div>
+                <div className={style.bottomSearch}>
+                    <form onSubmit={(e) => {
+                        e.preventDefault();
+                        setSearched(searchInput)
+                    }}>
+                    <input type="text" value={searchInput} placeholder='Search for products, categories ...' onChange={(e) => setSearchInput(e.target.value)}/>
+                    </form>
+                    <img src={search} style={{cursor: 'pointer'}} alt="" tabIndex="0" role="button" aria-label="search button" onClick={() => {
+                        setSearched(searchInput)}
+                    }/>
+                </div>
+            </div>
+            
             <div style={{background: 'white',borderBottom: '1px solid #D7DBDE'}}>
                 <div className={style.bottomFrame}>
                     <span className={style.bottomFrameH}>Home</span>
