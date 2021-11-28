@@ -124,11 +124,6 @@
     cursor: pointer;
     color: rgb(102, 102, 102);
 }
-.customDrop input {
-    border: none;
-    background: none;
-    cursor: pointer;
-}
 .itemWrapper {
     background: white;
     margin-top: 20px;
@@ -190,5 +185,7 @@
     .searchContainer {
         display: none;
     }
-    
+    .customDrop {
+        margin: 5px auto;
+    }
 }
